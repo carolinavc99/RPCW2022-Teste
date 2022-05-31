@@ -21,7 +21,14 @@ router.get('/classes', function(req, res, next) {
 })
 
 router.get('/termosIndice', function(req, res, next) {
-  
+  axios.get("http://clav-api.di.uminho.pt/v2/termosIndice?nivel=1&token=" + tok)
+    .then(resp => {
+      var dados = resp.data;
+      res.render('termos', { termos: dados , title: "Termos"});
+    })
+    .catch(error => {
+      res.render('error', { error: error });
+    }); 
 })
 
 
