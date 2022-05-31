@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Lista de Alunos
+  h2 22 de março de 2022
+  table
+    tr
+        th Identificador 
+        th Nome 
+        th Link para o Git 
+    each a in alunos
+        tr 
+            th 
+                a(href="/alunos/" + a.Id) #{a.Id}
+            th= a.Nome
+            th 
+                a(href="a.Git")= a.Git

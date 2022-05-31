@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Registo do Aluno #{aluno.Id}
+  h2 22 de março de 2022
+    p
+        b Identificador: 
+        span= aluno.Id
+    p 
+        b Nome: 
+        span= aluno.Nome
+    p 
+        b Git: 
+        a(href="aluno.Git") #{aluno.Git}
+    hr 
+    address 
+        a(href="/alunos") Voltar à lista

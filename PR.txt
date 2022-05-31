@@ -1,0 +1,15 @@
+EXERCÍCIO 1
+- separação do dataset em dois ficheiros json (ligações e cidades)
+- limpeza (ctrl+F replace all) de acentos e letras especiais (por exemplo 'ç') dos datasets
+- criação dos ficheiros criar_cidades.js e criar_ligacoes.js
+> node criar_cidades.js
+> node criar_ligacoes.js
+- database está agora preenchida
+Como correr:
+> npm i
+> npm start
+
+EXERCÍCIO 2
+Como correr:
+> npm i
+> npm start
