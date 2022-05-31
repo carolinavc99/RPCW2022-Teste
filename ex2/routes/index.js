@@ -32,4 +32,10 @@ router.get('/termosIndice', function(req, res, next) {
 })
 
 
+router.get("/voltar", function(req, res) {
+  visited.pop() // without this pop it goes back to itself
+  var lastvisited = visited.pop()
+  res.redirect(lastvisited)
+});
+
 module.exports = router;
